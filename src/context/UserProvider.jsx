@@ -1,14 +1,13 @@
-import { useEffect, useState } from "react";
-import { createContext } from "react";
-import PropTypes from "prop-types"; // Importamos prop-types
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
+import PropTypes from "prop-types"; // Importamos prop-types
+import { createContext, useEffect, useState } from "react";
 //import { getAuth } from "firebase/auth";
-import { auth } from "../firebase/firebase";
+import { auth } from "../firebase/config";
 export const UserContext = createContext();
 
 const UserProvider = (props) => {

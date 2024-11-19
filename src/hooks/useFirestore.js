@@ -68,9 +68,9 @@ import {
   updateDoc,
   where,
 } from "firebase/firestore/lite";
-import { useState } from "react";
-import { db, auth } from "../firebase/firebase";
 import { nanoid } from "nanoid";
+import { useState } from "react";
+import { auth, db } from "../firebase/config";
 
 export const useFirestore = () => {
   const [data, setData] = useState([]);// donde se  guardan los datos
